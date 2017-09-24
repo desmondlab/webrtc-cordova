@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "sslia"
+AuthUserFile "/home/gocommu/.htpasswds/public_html/sslia/passwd"
+require valid-user

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta http-equiv="Content-Security-Policy" content=" default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *"> -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="font-src * data:;img-src * data:; default-src * 'unsafe-eval' 'unsafe-inline'"> -->
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- bower install angular-sanitize -->
+    <!-- https://forum.ionicframework.com/t/sanitizing-content/1209 -->
+    <!-- http://codepen.io/calendee/pen/DKhbc -->
+    <!-- http://stackoverflow.com/questions/21510891/angular-ng-bind-html-doesnt-work-with-youtube-embed -->
+    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script> 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-sanitize.min.js"> not work, old-->
+    
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/directives.js"></script>
+    <!-- <script src="js/filters.js"></script> -->
+    <!-- <script src="js/routes.js"></script> -->
+    <script src="js/service.js"></script>
+    <script src="js/watchers.js"></script>
+    <script src="js/login.js"></script>
+    
+    <!-- Firebase -->
+    <!--<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>-->
+    <!--  <script src="js/firebase.js"></script> -->
+    <script src="libraries/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBeLrrJhHnykVYlRQx_TtX8x8d1Ekvv9kQ",
+      authDomain: "silence-7a982.firebaseapp.com",
+      databaseURL: "https://silence-7a982.firebaseio.com",
+      storageBucket: "silence-7a982.appspot.com",
+     };
+    firebase.initializeApp(config);
+     </script>
+  
+
+    <!-- Firebase Login and social login-->
+    <script src="views/home/home.js"></script>
+    <script src="views/login/login.js"></script>
+    <script src="views/register/register.js"></script>
+    <script src="views/forgotPassword/forgotPassword.js"></script>
+    <script src="views/add/add.js"></script>
+    <script src="templates/newslists.js"></script>
+    <script src="templates/contactus.js"></script>
+    <script src="templates/report.js"></script>
+    <script src="templates/booking.js"></script>
+    <script src="templates/setting.js"></script>
+    <script src="templates/history.js"></script>
+    <script src="js/qbfaceapp.js"></script>
+    
+    <!-- ngStorage -->
+    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>--> 
+    <script src="libraries/ng-cordova.min.js"></script>
+    <script src="libraries/ngStorage.min.js"></script>
+    <script src="libraries/ng-cordova-oauth.min.js"></script>
+    <script src="libraries/sha1.js"></script>
+
+    <!-- social sharing -->
+    <script src="modules/social-sharing/social-sharing.js"></script>
+   	<script src="js/controllers/linkShare.js"></script>
+  	<script src="js/controllers/imageShare.js"></script>
+	<script src="js/controllers/screenShare.js"></script>
+
+    <!-- for video chatting -->
+    <script src="libs/socket.io.js"></script>  
+
+    <!-- already loaded ionic/angularjs js <script src="lib/ionic/js/ionic.bundle.js"></script>, prevent double loading -->
+     <!-- <script src="lib/angular/angular.js"></script> -->
+    <!-- <script src="lib/ionic/js/ionic.js"></script> -->
+    
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="lib/collide/collide.js"></script>
+    
+    <!-- <script src="lib/ionic/js/ionic-angular.js"></script> -->
+    <script src="lib/angular-socket-io/socket.js"></script>
+    
+    <!-- <script src="scripts/app.js"></script> -->
+    <!--
+    <script src="scripts/signaling.js"></script>
+    <script src="scripts/ContactsService.js"></script>
+    <script src="scripts/LoginCtrl.js"></script>
+    <script src="scripts/ContactsCtrl.js"></script>
+    <script src="scripts/CallCtrl.js"></script>
+    <script src="scripts/VideoViewDirective.js"></script>
+    -->
+
+    <!-- QB Face -->
+    <link rel="canonical" href="https://quickblox.github.io/quickblox-javascript-sdk/samples/webrtc" />
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    -->
+    <!-- use http://una.im/CSSgram/ for filters -->
+    <link rel="stylesheet" href="libs/cssgram.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- end of QB Face -->
+
+    <!-- cordova script (this will be a 404 during development) must be the last script -->
+    <script src="cordova.js"></script>
+  </head>
+
+  <body ng-app="App" style="background-color: transparent;" class="platform-browser platform-cordova platform-webview">
+    <!--
+       <ion-nav-bar class="bar-stable">
+       <ion-nav-back-button>
+       </ion-nav-back-button>
+       </ion-nav-bar>
+    -->
+    <ion-nav-view></ion-nav-view>
+    <aside class="msg_board" id="msg_board" style="display: none;"></aside>
+
+    <!-- qbface link -->
+        <!-- TEMPLATES -->
+    <script type="text/template" id="user_tpl">
+        <li class="users__item">
+            <button class="users__user j-user" data-id="<%= id %>" data-login="<%= login %>" data-password="<%= password %>" data-name="<%= full_name %>">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="33" height="32" viewBox="0 0 33 32" version="1.1">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-84.000000, -152.000000)" fill="#000000">
+                      <g transform="translate(84.000000, 152.000000)">
+                        <path fill="#<%=colour%>" d="M16.75 16C21.17 16 24.75 12.42 24.75 8 24.75 3.58 21.17 0 16.75 0 12.33 0 8.75 3.58 8.75 8 8.75 12.42 12.33 16 16.75 16L16.75 16ZM16.75 20C11.41 20 0.75 22.68 0.75 28L0.75 32 32.75 32 32.75 28C32.75 22.68 22.09 20 16.75 20L16.75 20Z" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+
+                <p class="user__name"><%= full_name %></p>
+                <i class="users__btn_unchecked"></i>
+            </button>
+        </li>
+    </script>
+
+    <script type="text/template" id="accept_call">
+        <%  _.each(users, function(el, i, list) { %>
+            <% if(list.length === 1){ %>
+                <b><%= el.full_name %></b> has accepted the call
+            <% } else { %>
+                <% if( (i+1) === list.length) { %>
+                    <b><%= el.full_name %></b> have accepted the call
+                <% } else { %>
+                    <b><%= el.full_name %></b>,
+                <% } %>
+            <% } %>
+        <% }); %>
+    </script>
+
+    <script type="text/template" id="login_tpl">
+        Login in as <%= name %>
+        <button class='fw-link j-logout'>Logout</button>
+    </script>
+
+    <script type="text/template" id="during_call">
+        Login in as <%= name %>
+    </script>
+
+    <script type="text/template" id="device_not_found">
+        Error: devices (camera or microphone) are not found.
+        <span class="text">&emsp;Login&nbsp;in&nbsp;as&nbsp;<%=name%></span>
+        <button class='fw-link j-logout'>Logout</button>
+    </script>
+
+    <script type="text/template" id="callee_video">
+        <div class="callees__callee j-callee">
+            <div class="callees__callee_inner">
+                <p class="callees__callee_status j-callee_status_<%=userID%>">Connecting</p>
+                <video class="j-callees__callee_video callees__callee_video fw-video fw-video-wait" id="remote_video_<%=userID%>" data-user="<%=userID%>"></video>
+            </div>
+
+            <p class="callees__callee_name"><%=name%></p>
+        </div>
+    </script>
+
+    <script type="text/template" id="call_stop">
+        Call is stopped.&emsp;
+        Login&nbsp;in&nbsp;as&nbsp;<%=name%>
+        <button class='fw-link j-logout'>Logout</button>
+    </script>
+
+    <script type="text/template" id="p2p_call_stop">
+        <%=name%> has <%=reason%>. Call is stopped.&emsp;
+        Login&nbsp;in&nbsp;as&nbsp;<%=currentName%>
+        <button class='fw-link j-logout'>Logout</button>
+    </script>
+
+    <!-- Cordova -->
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script type="text/javascript">
+      var host = "quickblox.github.io";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<ion-view title="預約翻譯" cache-view="false" hide-back-button="false" hide-nav-bar="false">
+
+  <!-- hide the menu button -->
+  <ion-nav-buttons side="left"></ion-nav-buttons>
+
+  <ion-content class="padding">
+    <!-- <div class="list text-center padding">
+      <img class="logo" src="img/logo_crud.png">
+    </div> -->
+    <p>請填寫並提交以下資料，稍後你可以於預約記錄查看預約結果。</p>
+    <form novalidate name="addForm" ng-submit="addForm.$valid && add(product)">
+      <div class="list">
+        
+        <!--
+        <label class="item item-input">
+          <span class="input-label">聯絡電話</span>
+          <input name="phone" type="text" pattern="\d*" ng-model="product.phone" placeholder="請輸入您的聯絡電話" ng-minlength="8" ng-maxlength="30" required>
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">聯絡電郵</span>
+          <textarea name="email" type="text" ng-model="product.email" placeholder="請輸入您的聯絡電郵" ng-minlength="8" ng-maxlength="30" required></textarea>
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">內容</span>
+          <textarea name="description" class="line-height-160 description" type="text" ng-model="product.description" placeholder="請填上訊息內容" rows="8" wrap="hard" style="margin-right: 50px;" required></textarea>
+        </label>
+        -->
+        
+        <p>服務事由或性質</p
+        <ul class="list">
+          <li class="item item-checkbox">
+          醫療衛生
+            <label class="checkbox">
+              <input type="checkbox" ng-init="product.c1=false" ng-model="product.c1">
+            </label>
+          </li>
+
+          <li class="item item-checkbox">
+          親職教育
+            <label class="checkbox">
+              <input type="checkbox" ng-init="product.c2=false" ng-model="product.c2">
+            </label>
+          </li>
+
+          <li class="item item-checkbox">
+          就業相關
+            <label class="checkbox">
+              <input type="checkbox" ng-init="product.c3=false" ng-model="product.c3">
+            </label>
+          </li>
+
+          <li class="item item-checkbox">
+          社會教育
+            <label class="checkbox">
+              <input type="checkbox" ng-init="product.c4=false" ng-model="product.c4">
+            </label>
+          </li>
+
+          <li class="item item-checkbox">
+          福利申請
+            <label class="checkbox">
+              <input type="checkbox" ng-init="product.c5=false" ng-model="product.c5">
+            </label>
+          </li>
+        </ul>
+
+        <label class="item item-input">
+          <span class="input-label">其他</span>
+          <input name="name" type="text" ng-model="product.name" placeholder="其他事由（如有)" ng-minlength="2" ng-maxlength="30" >
+        </label>
+
+
+      <!--
+      <p> Selected item is : {{selectedItem1}}</p>
+      <p> Date of selected item is : {{selectedItem1.date}} </p>
+      <p> Time of selected item is : {{selectedItem1.time}} </p>
+
+      <p> Date of selected item is : {{selectedItem2.date}} </p>
+      <p> Time of selected item is : {{selectedItem2.time}} </p>
+      -->
+
+      <!-- how to disable sone selections -->
+      <!-- <select ng-model="selectedItem1" ng-options="bookingdate.time group by bookingdate.date disable when bookingdate.time==='10pm' for bookingdate in bookingdates"> -->
+
+      <!-- remove duplicate option  -->
+      <label class="item item-input">
+        <span class="input-label">可供預約的日期</span>
+        <select id="typeselect" ng-model="product.selectedItem1" ng-options="bookingdate.slot_date for bookingdate in timeslot1 | unique:'slot_date'"  ng-change="changedate(product.selectedItem1.slot_date)" required><option value ="">請選擇</option></select>
+      </label>
+
+      <label class="item item-input" ng-show="bookingdates2.length">
+        <span class="input-label">該天可預約時段</span>
+        <select id="typeselect2" ng-model="product.selectedItem2" ng-options="bookingdate.time_slot for bookingdate in timeslot1 | filter:product.selectedItem1.slot_date"  required ><option value ="">請選擇</option></select> 
+      </label>
+      <!-- <select id="typeselect2" ng-model="selectedItem2" ng-options="bookingdate.time for bookingdate in bookingdates2 | unique2:selectedItem1.date" ></select> -->
+      <!-- <select id="typeselect2" ng-model="selectedItem2"  ng-options="bookingdate2.time for bookingdate2 in bookingdates2" ng-if="selectedItem1.date==='3-Oct'" ng-show="bookingdates2.length"></select>-->
+
+
+        <!--
+        <label class="item item-input">
+          <span class="input-label">URL:</span>
+          <input name="url" type="text" ng-model="product.url" placeholder="URL of Product" ng-minlength="5" ng-maxlength="50">
+        </label>
+        -->
+       
+        <!-- <label class="item item-input" ng-click="choosePhoto()">
+          <span class="input-label">Image:</br>128 x 128</span>
+          <img ng-src="{{imageUrl}}" style="width: 128px; height: auto;">
+        </label>
+        -->
+
+      </div>
+    </form>
+    <div class="button-bar">
+      <!-- <button class="button button-block button-assertive" ng-click="back()">Back to Products</button> -->
+      <button class="button button-block button-positive" ng-click="add(product)" ng-disabled="addForm.$invalid">{{mode}}</button>
+    </div>
+
+    
+  </ion-content>
+</ion-view>

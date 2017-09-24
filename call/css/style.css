@@ -1,0 +1,709 @@
+/* Empty. Add your own CSS if you like */
+
+.j-main {
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;
+}
+
+.frontpageheader2{
+font-size:15px;
+margin-top: 150px;
+text-align: center;
+}
+
+.frontpageheader
+{
+
+background-image:  url("../img/home4.jpg")!important;
+background-repeat: no-repeat !important ;
+background-size: 100% auto !important;
+padding-bottom: 40px;
+padding-top: 10px;
+
+}
+
+.bar.bar-positive {
+    border-color: #ffffff;
+}
+
+.iconHeight{
+    height: 45px;
+}   
+
+.bar-positive .button {
+    color: #777575;
+}
+
+img {
+    width: 100%;
+}
+
+.space {
+    height: 10px;
+}
+
+logo {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
+.item-input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.button {
+  border-radius: 5px;
+}
+.button-no-margin-top {
+  margin-top: 0px !important;
+}
+.spinner svg {
+  width: 56px;
+  height: 56px;
+  stroke: #fff;
+  fill: #fff;
+}
+.message-popup {
+  width: 225px;
+  height: auto;
+  border-radius: 50px !important;
+}
+
+.message-confirm .popup {
+  width: 225px !important;
+  height: auto !important;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 10px !important;
+  font-size: 120%;
+  line-height: 160%;
+  text-align: center;
+}
+.message-confirm .popup-head {
+  border: 0px !important;
+}
+.message-confirm .popup-title {
+  color: #fff;
+  font-size: 200%;
+  margin-bottom: -20px;
+}
+.message-confirm .button-confirm {
+  color: #fff;
+  background: none;
+  border: 0px;
+}
+
+.message-popup p {
+  line-height: 160%;
+  font-size: 110%;
+}
+
+.loading {
+  border-radius: 10px !important;
+}
+
+.profilePic {
+  width: 150px;
+  height: auto;
+  border-radius: 150px;
+  margin-top:75px;
+}
+.bold {
+  font-weight: bolder;
+}
+.line-height-160 {
+  line-height: 160%;
+}
+h4 a {
+  text-decoration: none;
+}
+
+
+/* Loading and Messages Popup utils.js */
+.loading {
+  max-width: 70%;
+  border-radius: 15px !important;
+}
+
+.loading h1 {
+  font-size: 250%;
+}
+
+.loading p {
+  line-height: 160%;
+  font-size: 110%;
+  text-align: center;
+}
+
+.spinner svg {
+  width: 64px;
+  height: 64px;
+  stroke: #fff;
+}
+
+/* Borderless Class */
+.border-clear {
+  border: 0 !important;
+}
+
+/* Margin Classes */
+.margin-top5 {
+  margin-top: 5px !important;
+}
+.margin-top10 {
+  margin-top: 10px !important;
+}
+.margin-top15 {
+  margin-top: 15px !important;
+}
+.margin-top20 {
+  margin-top: 20px !important;
+}
+.margin-top-5 {
+  margin-top: -5px !important;
+}
+.margin-top-10 {
+  margin-top: -10px !important;
+}
+.margin-top-15 {
+  margin-top: -15px !important;
+}
+.margin-top-20 {
+  margin-top: -20px !important;
+}
+
+.margin-bottom5 {
+  margin-bottom: 5px !important;
+}
+.margin-bottom10 {
+  margin-bottom: 10px !important;
+}
+.margin-bottom15 {
+  margin-bottom: 15px !important;
+}
+.margin-bottom20 {
+  margin-bottom: 20px !important;
+}
+.margin-bottom-5 {
+  margin-bottom: -5px !important;
+}
+.margin-bottom-10 {
+  margin-bottom: -10px !important;
+}
+.margin-bottom-15 {
+  margin-bottom: -15px !important;
+}
+.margin-bottom-20 {
+  margin-bottom: -20px !important;
+}
+
+.margin-left5 {
+  margin-left: 5px !important;
+}
+.margin-left10 {
+  margin-left: 10px !important;
+}
+.margin-left15 {
+  margin-left: 15px !important;
+}
+.margin-left20 {
+  margin-left: 20px !important;
+}
+.margin-left-5 {
+  margin-left: -5px !important;
+}
+.margin-left-10 {
+  margin-left: -10px !important;
+}
+.margin-left-15 {
+  margin-left: -15px !important;
+}
+.margin-left-20 {
+  margin-left: -20px !important;
+}
+
+.margin-right5 {
+  margin-right: 5px !important;
+}
+.margin-right10 {
+  margin-right: 10px !important;
+}
+.margin-right15 {
+  margin-right: 15px !important;
+}
+.margin-right20 {
+  margin-right: 20px !important;
+}
+.margin-right-5 {
+  margin-right: -5px !important;
+}
+.margin-right-10 {
+  margin-right: -10px !important;
+}
+.margin-right-15 {
+  margin-right: -15px !important;
+}
+.margin-right-20 {
+  margin-right: -20px !important;
+}
+
+.line-height160 {
+  line-height: 160% !important;
+}
+
+.description::-webkit-input-placeholder {
+  padding-left: 2px;
+}
+.description::-moz-input-placeholder {
+  padding-left: 2px;
+}
+.description:-moz-input-placeholder {
+  padding-left: 2px;
+}
+.description:-ms-input-placeholder {
+  padding-left: 2px;
+}
+.product-list {
+  border-radius: 10px;
+}
+.product-list .item-body {
+  padding: 0px !important;
+}
+.product-logo {
+  float: left !important;
+  display: inline-block !important;
+  width: 35%;
+  padding: 10px;
+  margin-top: 20px;
+}
+.product-logo img {
+  width: 100%;
+}
+.product-delete {
+  float: left !important;
+  display: inline-block !important;
+  width: 10%;
+  margin-left: -10px;
+}
+.product-delete button {
+  margin: auto;
+  background: none;
+  border: none;
+  font-size: 175%;
+}
+.product-delete button:hover {
+  background: none;
+  border: none;
+}
+.product-title {
+  float: left !important;
+  display: inline-block !important;
+  width: 55%;
+  padding-left: 5px !important;
+  padding-right: 10px !important;
+}
+.product-title h2 {
+  font-size: 110%;
+  font-weight: bold;
+}
+.product-title h2 span {
+  color: #fff;
+  background: #808080;
+  border-radius: 5px;
+  padding: 3px;
+}
+.product-description {
+  float: right !important;
+  display: inline-block !important;
+  width: 65%;
+  margin-top: -10px;
+  padding-left: 5px !important;
+  padding-right: 10px !important;
+  min-height: 110px;
+  line-height: 160%;
+  margin-bottom: 10px;
+}
+.product-description p {
+  font-size: 100%;
+  text-align: left;
+}
+.product-info {
+  float: left !important;
+  display: inline-block !important;
+  width: 35%;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.product-info button {
+  width: 80%;
+  margin: auto;
+}
+
+.bar.bar-stable {
+    background-color: #f08300;
+}
+
+.bar.bar-stable .title {
+    color: #fff;
+}
+
+.item-icon-left .icon, .item-icon-right .icon 
+{ font-size: 16px;}
+
+.titletext  {   
+  font-size: 16px;
+  margin: 10px;
+}
+
+.item.bgshare {
+    background-color: #f08300;
+}
+
+i.icon {
+    color: #ffffff;
+}
+
+.item.bgshare {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.bar-stable .button.button-clear {
+    color: #fff;
+}
+
+button.button.share-anywhere {
+    background-color: #f08300;
+    min-width: 40px;
+}
+
+.button.button-energized {
+    background-color: #f08300;
+    /* opacity: 0.9; */
+}
+
+
+.button.button-dark.button-clear {
+    border-color: #dad9d9;
+}
+
+.border-slimline {
+    border: 1 !important;
+    border-color: #b9b9b9;
+}
+
+.introtable.col {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b8b8b9;
+    background-color: #f5f5f5;
+}
+
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+    background: #f08300;
+    border-color: #f08300;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bar.bar-positive {
+    background-color: #ffffff !important;
+}
+
+.swiper-container {
+    background-color: #f08300;
+}
+
+.frontpageheader2 .row {
+    margin-left: 0px;
+}
+
+a {
+    color: #2f2f2f !important;
+}
+
+.padding .row {
+    margin-left: 0px;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    margin-left: 0px !important;
+}
+
+.input-label {
+    font-weight: 300;
+}
+
+
+.item-input input {
+font-weight: 300;
+}
+
+
+button, select {
+    font-weight: 300;
+}
+
+/* responsive of youtube video */
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.video-container-news {
+    position: relative;
+    /* padding-bottom: 56.25%; */
+    padding-top: 30px; height: 0; overflow: hidden;
+    height: auto;
+}
+ 
+.video-container-news iframe,
+.video-container-news object,
+.video-container-news embed {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* end of responsive of youtube video */
+
+
+.newscontent{
+  margin: 10px;
+}
+
+a {
+    color: #2b2b2b;
+    text-decoration: none !important;
+}
+
+/* social sharing */
+
+.social-sharing {
+    padding: 10px 0px 10px 20px;
+}
+
+/* end of social sharing */
+
+/* Old Video Chatting
+
+video {
+    -webkit-transform: scaleY(1) !important;
+    transform: scaleY(1) !important;
+}
+
+
+.progress-bar-icon {
+	font-size: 36px;
+	margin: auto;
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	bottom: 0; 
+	right: 0; 
+	height: 36px;
+	width: 36px;
+	z-index: 3;
+}
+
+.calling-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.calling-container p {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.video-container {
+	width: 100%; 
+	height: 100%; 
+	position: absolute;
+	background-color: #000; 
+	text-align: center;
+}
+
+
+.bgwelcome1 {
+    background-color: red;
+}
+
+.bgwelcome2 {
+    background-color: #f08300;
+}
+
+.bgwelcome3 {
+    background-color: orange;
+}
+
+
+.bar.bar-positive {
+    background-color: #ffffff;
+}
+
+
+
+.video-container {
+	width: 300px; 
+	height: 300px; 
+	background-color: #000; 
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
+
+end of Video Chatting */
+
+/* New QB Face Video Chatting */
+
+video {
+    -webkit-transform: scaleY(1) !important;
+    transform: scaleY(1) !important;
+    background-color: transparent;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+
+/* start ios css */
+ion-side-menu, body {
+   background-color: transparent; 
+
+}
+
+.my-transparent-background {
+  background-color: transparent;
+  border-color: transparent;
+}
+/*.pane {
+    background-color: transparent;
+}
+.item-content {
+    background-color: transparent;
+}
+.item-complex {
+    background-color: transparent;
+}*/
+
+.item-complex .item-content {
+    background-color: transparent;
+}
+
+/*.my-menu-header {
+    background-color: #f08300;
+}
+*/
+.header-background-transparent {
+    background-color: transparent;
+}
+/*.item {
+    background-color: transparent;
+    border-color: transparent;
+}
+.menu {
+    background-color: transparent;
+}*/
+/*.bar {
+    background-color: transparent;
+}*/
+/*.bar-stable {
+    background-color: transparent;
+}
+*/
+/*.bar.bar-stable {
+    background-color: transparent;
+}*/
+/* end ios css */
+
+#localVideo {
+  position: absolute;
+  z-index: 100 !important;
+}
+
+#localVideo.active {
+  opacity: 1;
+  z-index: 100 !important;
+}
+
+#main_video {
+  display: block;
+  object-fit: cover;  /* no letterboxing */
+  /* position: absolute; */
+    float: right;
+    height: 680px !important;
+    /* z-index: -1; */
+    /* height: 80%; */
+    /* top: -100px; */
+}
+	
+#main_video.active {
+  opacity: 1;
+  z-index: -1;
+  top: -100px;
+}
+
+#camera_show {
+  display: block;
+  object-fit: cover;  
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+}
+  
+#camera_show.active {
+  opacity: 1;
+  z-index: -1;
+  top: -100px;
+}
+
+.content_top_hidden {
+  top: 0px;
+}
+
+.content_top_show {
+  top: 44px;
+}
+
+.video_chat_description {
+  text-align: center;
+  color: red;
+  background: transparent;
+  font-size: x-large;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#description_view {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+#camera_preview {
+  width: 100%;
+  height: 100%;
+}
+
+#calling_ctrl_index {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  height: 100%; 
+
+}
+/* End of new QB Face Video Chatting */

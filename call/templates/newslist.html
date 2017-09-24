@@ -1,0 +1,18 @@
+
+<ion-view view-title="消息詳情">
+
+  <!-- hide the menu button -->
+  <ion-nav-buttons side="left"></ion-nav-buttons>
+  
+  <ion-content class="newscontent">
+  
+    <!-- {{detailService.itemName}} -->
+    <div >{{detailService.itemName.news_date}} </div>
+    <div >{{detailService.itemName.brief}} </div>    
+    <!-- responsive youtube video http://codepen.io/sushi/pen/waroPg -->
+    <div ng-bind-html="snippet" class="video-container-news"></div>
+
+     <srf-social-share data-config="linkShareCtrl.share"></srf-social-share>
+
+  </ion-content>
+</ion-view>

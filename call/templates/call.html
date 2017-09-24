@@ -1,0 +1,44 @@
+<ion-view title="Call" hide-back-button="true" style="position: relative;">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon"
+            ng-class="{ 'ion-ios7-mic-off': muted, 'ion-ios7-mic': !muted }"
+            ng-click="toggleMute()"
+            ng-if="cordova.platformId === 'ios' || cordova.platformId === 'android'"></button>
+    <button class="button button-icon icon ion-plus-round" 
+            ng-click="openSelectContactModal()"></button>
+  </ion-nav-buttons>
+  <div style="width: 100%; height: 100%; position: relative;">
+    <video-view style="position: relative; z-index: 500;  -webkit-transform:translateZ(500);"></video-view>
+    <div class="calling-container" ng-if="isCalling && !callInProgress" style="width: 100%; position: absolute; top: 0; z-index: 4000; right: 0; -webkit-transform:translateZ(4000);">
+      <p style="text-align: center;"><span style="color: white;">Calling to </span><span class="balanced">{{ contactName }}</span>...</p>
+
+      <button class="button button-assertive" ng-click="ignore()" style="float: right; margin-right: 30pt;   border-radius: 50%;">
+        <i class=""></i>
+      </button>
+    </div>
+
+    <div class="calling-container" ng-if="!isCalling && !callInProgress" style="width: 100%; position: absolute; top: 0; z-index: 4000; right: 0;  -webkit-transform:translateZ(4000);">
+      <p style="text-align: center;"><span class="balanced">{{ contactName }}</span><span style="color: white;"> is calling you</span></p>
+
+      <button class="button button-assertive" ng-click="ignore()" style="float: right;  margin-right: 30pt;   border-radius: 50%;">
+        <i class=""></i>
+      </button>
+      <button class="button button-positive" ng-click="answer()" style="float: right; margin-right: 5pt;   border-radius: 50%;">
+        <i class=""></i>
+      </button>
+      
+    </div>
+
+    <div class="calling-container" ng-if="callInProgress" style="width: 100%; position: absolute; top: 0; z-index: 4000; right: 0;  -webkit-transform:translateZ(4000);">
+      <p style="color: white; text-align: center">
+      </p>
+
+      <button class="button button-assertive" ng-click="end()" style="float: right;  margin-right: 30pt;   border-radius: 50%;">
+        <i class=""></i>
+      </button>
+    </div>
+
+  </div>
+
+</ion-view>
+

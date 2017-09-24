@@ -1,0 +1,39 @@
+<ion-view title="用戶設定" cache-view="false" hide-back-button="true" hide-nav-bar="false">
+  <ion-content class="padding">
+    <!-- <div class="list text-center padding">
+      <img class="logo" src="img/logo_crud.png">
+    </div> -->
+    <p>{{message}}</p>
+    <p ng-if="message == '您已經登入'">以下為您的用戶資料</p>
+    <form novalidate name="addForm" ng-submit="addForm.$valid && add(product)" >
+      <div class="list" ng-if="message == '您已經登入'"> 
+      <!--  <div class="list" > -->
+        <label class="item item-input">
+          <span class="input-label">姓名</span>
+          <input name="name" type="text" ng-model="product.name" placeholder="請輸入您的姓名" ng-minlength="2" ng-maxlength="30" required>
+        </label>
+        
+        <label class="item item-input">
+          <span class="input-label">聯絡電話</span>
+          <input name="phone" type="text" pattern="\d*" ng-model="product.phone" placeholder="請輸入您的聯絡電話" ng-minlength="8" ng-maxlength="30" required>
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">聯絡電郵</span>
+          <input name="email" type="text" ng-model="product.email" placeholder="請輸入您的聯絡電郵" ng-minlength="6" ng-maxlength="30" required>
+          <!-- <textarea name="email" type="text" ng-model="product.email" placeholder="請輸入您的聯絡電郵" ng-minlength="8" ng-maxlength="30" required></textarea> -->
+        </label>
+          <!-- Your Login id is {{userId}} -->
+        
+      </div>
+    </form>
+    <div class="button-bar">
+      <button class="button button-block button-positive" ng-click="add(product)" ng-disabled="addForm.$invalid"  ng-if="message == '您已經登入'">更新個人資料</button>
+    </div>
+
+    <div class="button-bar">
+      <button class="button button-block button-assertive" ng-click="logout()" ng-if="message == '您已經登入'">登出</button>
+    </div>
+
+  </ion-content>
+</ion-view>

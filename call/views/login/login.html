@@ -1,0 +1,36 @@
+
+<ion-view view-title="用戶登入" hide-back-button="true" hide-nav-bar="false">
+  <ion-content>
+    <div class="padding">
+      <!-- <img class="logo" src="img/logo.png" /> -->
+      <p>以注冊用戶資料登入</p>
+      <form novalidate name="loginForm">
+        <ion-list>
+          <ion-item class="item item-input order-slimline">
+            <span class="input-label">Email:</span>
+            <input name="email" type="email" ng-model="user.email" placeholder="請輸入您的註冊電郵" ng-minlength="5" ng-maxlength="30" required>
+          </ion-item>
+          <ion-item class="item item-input order-slimline">
+            <span class="input-label">Password:</span>
+            <input name="password" type="password" ng-model="user.password" placeholder="請輸入您的註冊密碼" ng-minlength="5" ng-maxlength="30" required>
+          </ion-item>
+          <div class="button-bar">
+            <!-- <button class="button button-block button-dark" guest-login>Login as Guest</button> -->
+            <button class="button button-block button-energized" ng-disabled="loginForm.$invalid" firebase-login>Login</button>
+          </div>
+          <div class="button-bar">
+            <button class="button button-block button-clear button-dark" ng-click="forgotPassword()">忘記密碼</button>
+            <button class="button button-block button-clear button-dark" ng-click="register()">註冊帳戶</button>
+          </div>
+        </ion-list>
+      </form>
+      以 Facebook 或 Google 登入
+      <div class="button-bar">
+        <button class="button button-block button-positive" facebook-login><i class="icon padding medium ion-social-facebook clear"></i></button>
+        <button class="button button-block button-assertive" google-login><i class="icon padding medium ion-social-google clear"></i></button>
+        <!-- <button class="button button-block button-calm" twitter-login><i class="icon padding medium ion-social-twitter clear"></i></button> -->
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+

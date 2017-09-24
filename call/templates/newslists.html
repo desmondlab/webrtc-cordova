@@ -1,0 +1,116 @@
+
+<ion-view view-title="最新消息列表">
+  <ion-content>
+
+<!-- 
+
+<ion-list>
+      <ion-item ng-repeat="product in products" href="#/app/newslists/{{product.id}}" ng-click="getDetail(product)">
+        {{product.brief}} 
+        {{product.id}} 
+        {{product.details}} 
+        {{product.news_date}}
+        {{product.thumbnail_url}}
+
+<div class="list card">
+
+  <div class="item item-image" >
+    <img src="img/logo_crud.png">
+  </div>
+
+{{product.brief}} 
+
+<div class="item">
+  <a class="item-icon-left assertive icon ion-ios-paper" href="#">
+    <i class="icon ion-ios-paper"></i>
+    詳情
+  </a>
+
+  <a class="item-icon-right assertive" href="#">
+    <i class="icon ion-android-share-alt"></i>
+ 分享
+  </a>
+</div>
+
+</div>
+
+   </ion-item>
+
+</ion-list>
+
+
+<div class="list card">
+
+  <div class="item item-image" >
+    <img src="img/logo_crud.png">
+  </div>
+
+test 2
+
+<div class="item">
+  <a class="item-icon-left assertive icon ion-music-note" href="#">
+    <i class="icon ion-music-note"></i>
+    詳情
+  </a>
+
+  <a class="item-icon-right assertive" href="#">
+    <i class="icon ion-music-note"></i>
+    分享
+  </a>
+</div>
+
+</div>
+
+-->
+
+<div class="list card" ng-repeat="product in products | orderBy:'-'" href="#/app/newslists/{{product.id}}" ng-click="getDetail(product)">
+
+<!-- <div ng-bind-html="snippet"></div> -->
+
+<div class="item item-image" >
+  <a href="#/app/newslists/{{product.id}}" ng-click="getDetail(product)">
+    <img src={{product.thumbnail_url}} >
+  </a>
+</div>
+
+<div class="datetext">
+{{product.news_date}}
+</div>
+
+<div class="titletext" href="#/app/newslists/{{product.id}}" ng-click="getDetail(product)">
+  <a href="#/app/newslists/{{product.id}}" ng-click="getDetail(product)">
+    {{product.brief}} 
+  </a>
+</div>
+
+<!--
+<div class="item bgshare">
+  <a class="item-icon-left assertive" href="#/app/newslists/{{product.id}}" ng-click="getDetail(product)">
+    <i class="icon ion-ios-paper">詳情</i>
+  </a>
+
+
+  <a class="item-icon-right assertive" href="#">
+    <i class="icon"> 
+      <srf-social-share data-config="linkShareCtrl.share">分享</srf-social-share> 
+      </i>
+  </a>
+  -->
+
+<!--
+<a class="item-icon-right assertive" href="#">
+ <srf-social-share data-config="linkShareCtrl.share">分享</srf-social-share>
+ </a>
+-->
+
+</div>
+
+</div>
+
+
+<!--  <srf-social-share data-config="linkShareCtrl.share"></srf-social-share> -->
+<!-- end of new list -->
+
+
+  </ion-content>
+</ion-view>

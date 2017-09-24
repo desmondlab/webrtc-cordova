@@ -1,0 +1,67 @@
+<ion-view cache-view="false" view-title="預約需知">
+  <ion-content class="padding">
+
+    <p>申請方法：</p>
+    <p>1. 請於最少三個工作天前提出申請，並於時一拼遞交翻譯資料的副本。 </p>
+    <p>2. 申請後兩個工作天內，如果仍未收到本會回覆，請立即向手語主任黃姑娘查詢。</p>
+    <p>3. 請將申請表交回 石硤尾白田邨翠田樓地下一號或傳真 27770677</p>
+    <p>服務收費：</p>
+
+    <div class="row">
+      <div class="introtable col col-50"></div>
+      <div class="introtable col col-50">手語翻譯服務收費</div>
+    </div>
+
+    <div class="row">
+      <div class="introtable col col-50">會員</div>
+      <div class="introtable col col-50">免費</div>
+    </div>
+
+    <div class="row">
+      <div class="introtable col col-50">非會員 / 機構申請</div>
+      <div class="introtable col col-50">$400 /小時*</div>
+    </div>
+
+    <p>*非會員或機構可以申請減費或豁免收費，詳情參考申請表格</p>
+    <p>公平服務使用原則：</p>
+    <p>4. 本中心之手譯服務均受《龍耳 — 手語翻譯 保密協議》所保護，如欲索取協議副本，請與手語部聯絡。</p>
+    <p>5. 服務申請者 / 接受服務人士必須準時出席翻譯場所，且不得指定手語翻譯員。</p>
+    <p>6. 本中心收到服務申請後，將會按服務內容協調翻譯員出勤，除非有明確證明翻譯員與服務有利害衝突，否則本中心將不會為服務主動更換翻譯員。</p>
+    <p>服務取消收費原則：</p>
+
+    <div class="row">
+      <div class="introtable col">通知期</div>
+      <div class="introtable col">兩個工作天前通知</div>
+      <div class="introtable col">一個工作天前通知</div>
+      <div class="introtable col">不足24小時</div>
+    </div>
+
+    <div class="row">
+      <div class="introtable col">會員</div>
+      <div class="introtable col">免費</div>
+      <div class="introtable col">免費</div>
+      <div class="introtable col">除特殊情況，否則按服務時數支付 ($250/小時)</div>
+    </div>
+
+    <div class="row">
+      <div class="introtable col">非會員 / 機構</div>
+      <div class="introtable col">免費</div>
+      <div class="introtable col">服務總費用之70%</div>
+      <div class="introtable col">費用全數</div>
+    </div>
+
+    <p>查詢電話：27770919 / 66273235 (WhatsApp)</p> 
+    <p>傳真： 27770677 手語主任黃姑娘</p>
+    
+    <div class="button-bar">
+      <!-- <button class="button button-block button-assertive" ng-click="back()">Back to Products</button> -->
+      <button class="button button-block button-positive" ng-click="go('/app/booking')" ng-if="message == '您已經登入'" >我同意以上條款並進行預約</button>
+    </div>
+
+    <div class="button-bar">
+      <!-- <button class="button button-block button-assertive" ng-click="back()">Back to Products</button> -->
+      <button class="button button-block button-positive" ng-click="go('/app/login')" ng-if="message == '您還沒有登入'">請登入以使用此服務</button>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view view-title="預約記錄">
+  <ion-content>
+    
+    <div class="padding"> 
+   
+    <p> 以下是您的預約記錄 </p>
+
+    <ul class="list">
+    <li class="item" ng-repeat="product in products">
+     預約日期： {{product. bookdate}} </br>
+     預約時間：{{product. booktimeslot}}</br>
+     預約狀態：{{product. bookingAcceptionStatus}}</br>
+    </li>
+    </ul>
+    </div>
+
+
+  </ion-content>
+</ion-view>
